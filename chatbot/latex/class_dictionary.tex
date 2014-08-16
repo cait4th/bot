@@ -1,0 +1,124 @@
+\hypertarget{class_dictionary}{\section{クラス Dictionary}
+\label{class_dictionary}\index{Dictionary@{Dictionary}}
+}
+
+
+{\ttfamily \#include $<$Dictionary.\-h$>$}
+
+\subsection*{Public メソッド}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_dictionary_a2a9281bf1e720ec8df5cb48811a17960}{Dictionary} (\hyperlink{class_word_factory}{Word\-Factory} $\ast$\-\_\-factory)
+\item 
+virtual \hyperlink{class_dictionary_aa36f24073d9c9001768517aa2322cb82}{$\sim$\-Dictionary} ()
+\begin{DoxyCompactList}\small\item\em 入力された文章をtxtに出力 \end{DoxyCompactList}\item 
+void \hyperlink{class_dictionary_ae67a3b3381ea7abad6abbf97f8fa487d}{Load} (const string \&\-\_\-filename)
+\begin{DoxyCompactList}\small\item\em ファイルから辞書データベースに登録 \end{DoxyCompactList}\item 
+void \hyperlink{class_dictionary_a06a22c1c171e078c66a67aa8fc769071}{Save} (vector$<$ string $>$ \&\-\_\-input)
+\begin{DoxyCompactList}\small\item\em ファイルから文章を形態素解析して登録 \end{DoxyCompactList}\item 
+multimap$<$ const string, \hyperlink{class_word}{Word} $\ast$ $>$ \hyperlink{class_dictionary_ae3f70ff3810d1356e15780f2e0869489}{get\-Dictionary} ()
+\begin{DoxyCompactList}\small\item\em 辞書を返す \end{DoxyCompactList}\item 
+\hyperlink{class_word}{Word} $\ast$ \hyperlink{class_dictionary_aa727f50566a8e5cd42a95783ab5b422c}{get\-Word} (const string \&\-\_\-key, const string \&\-\_\-part=string(\char`\"{}$\ast$\char`\"{}), const string \&\-\_\-pre\-Part=string(\char`\"{}$\ast$\char`\"{}))
+\begin{DoxyCompactList}\small\item\em キー・品詞・前接続から\-Wordを取り出す \end{DoxyCompactList}\item 
+bool \hyperlink{class_dictionary_a24d6c61f4ff74902322f298dea90c3da}{Is\-Exist\-Word} (const string \&\-\_\-key)
+\begin{DoxyCompactList}\small\item\em キーが辞書に登録されているか \end{DoxyCompactList}\item 
+void \hyperlink{class_dictionary_a38763d6ce81b56ea6a76130a6f33432d}{Save\-String} (const string \&\-\_\-str)
+\begin{DoxyCompactList}\small\item\em 入力された文章を蓄積 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{コンストラクタとデストラクタ}
+\hypertarget{class_dictionary_a2a9281bf1e720ec8df5cb48811a17960}{\index{Dictionary@{Dictionary}!Dictionary@{Dictionary}}
+\index{Dictionary@{Dictionary}!Dictionary@{Dictionary}}
+\subsubsection[{Dictionary}]{\setlength{\rightskip}{0pt plus 5cm}Dictionary\-::\-Dictionary (
+\begin{DoxyParamCaption}
+\item[{{\bf Word\-Factory} $\ast$}]{\-\_\-factory}
+\end{DoxyParamCaption}
+)}}\label{class_dictionary_a2a9281bf1e720ec8df5cb48811a17960}
+\hypertarget{class_dictionary_aa36f24073d9c9001768517aa2322cb82}{\index{Dictionary@{Dictionary}!$\sim$\-Dictionary@{$\sim$\-Dictionary}}
+\index{$\sim$\-Dictionary@{$\sim$\-Dictionary}!Dictionary@{Dictionary}}
+\subsubsection[{$\sim$\-Dictionary}]{\setlength{\rightskip}{0pt plus 5cm}Dictionary\-::$\sim$\-Dictionary (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_dictionary_aa36f24073d9c9001768517aa2322cb82}
+
+
+入力された文章をtxtに出力 
+
+
+
+\subsection{関数}
+\hypertarget{class_dictionary_ae3f70ff3810d1356e15780f2e0869489}{\index{Dictionary@{Dictionary}!get\-Dictionary@{get\-Dictionary}}
+\index{get\-Dictionary@{get\-Dictionary}!Dictionary@{Dictionary}}
+\subsubsection[{get\-Dictionary}]{\setlength{\rightskip}{0pt plus 5cm}multimap$<$ const string, {\bf Word} $\ast$ $>$ Dictionary\-::get\-Dictionary (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_dictionary_ae3f70ff3810d1356e15780f2e0869489}
+
+
+辞書を返す 
+
+\hypertarget{class_dictionary_aa727f50566a8e5cd42a95783ab5b422c}{\index{Dictionary@{Dictionary}!get\-Word@{get\-Word}}
+\index{get\-Word@{get\-Word}!Dictionary@{Dictionary}}
+\subsubsection[{get\-Word}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Word} $\ast$ Dictionary\-::get\-Word (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{\-\_\-key, }
+\item[{const string \&}]{\-\_\-part = {\ttfamily string(\char`\"{}$\ast$\char`\"{})}, }
+\item[{const string \&}]{\-\_\-pre\-Part = {\ttfamily string(\char`\"{}$\ast$\char`\"{})}}
+\end{DoxyParamCaption}
+)}}\label{class_dictionary_aa727f50566a8e5cd42a95783ab5b422c}
+
+
+キー・品詞・前接続から\-Wordを取り出す 
+
+\hypertarget{class_dictionary_a24d6c61f4ff74902322f298dea90c3da}{\index{Dictionary@{Dictionary}!Is\-Exist\-Word@{Is\-Exist\-Word}}
+\index{Is\-Exist\-Word@{Is\-Exist\-Word}!Dictionary@{Dictionary}}
+\subsubsection[{Is\-Exist\-Word}]{\setlength{\rightskip}{0pt plus 5cm}bool Dictionary\-::\-Is\-Exist\-Word (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{\-\_\-key}
+\end{DoxyParamCaption}
+)}}\label{class_dictionary_a24d6c61f4ff74902322f298dea90c3da}
+
+
+キーが辞書に登録されているか 
+
+\hypertarget{class_dictionary_ae67a3b3381ea7abad6abbf97f8fa487d}{\index{Dictionary@{Dictionary}!Load@{Load}}
+\index{Load@{Load}!Dictionary@{Dictionary}}
+\subsubsection[{Load}]{\setlength{\rightskip}{0pt plus 5cm}void Dictionary\-::\-Load (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{\-\_\-filename}
+\end{DoxyParamCaption}
+)}}\label{class_dictionary_ae67a3b3381ea7abad6abbf97f8fa487d}
+
+
+ファイルから辞書データベースに登録 
+
+\hypertarget{class_dictionary_a06a22c1c171e078c66a67aa8fc769071}{\index{Dictionary@{Dictionary}!Save@{Save}}
+\index{Save@{Save}!Dictionary@{Dictionary}}
+\subsubsection[{Save}]{\setlength{\rightskip}{0pt plus 5cm}void Dictionary\-::\-Save (
+\begin{DoxyParamCaption}
+\item[{vector$<$ string $>$ \&}]{\-\_\-input}
+\end{DoxyParamCaption}
+)}}\label{class_dictionary_a06a22c1c171e078c66a67aa8fc769071}
+
+
+ファイルから文章を形態素解析して登録 
+
+\hypertarget{class_dictionary_a38763d6ce81b56ea6a76130a6f33432d}{\index{Dictionary@{Dictionary}!Save\-String@{Save\-String}}
+\index{Save\-String@{Save\-String}!Dictionary@{Dictionary}}
+\subsubsection[{Save\-String}]{\setlength{\rightskip}{0pt plus 5cm}void Dictionary\-::\-Save\-String (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{\-\_\-str}
+\end{DoxyParamCaption}
+)}}\label{class_dictionary_a38763d6ce81b56ea6a76130a6f33432d}
+
+
+入力された文章を蓄積 
+
+
+
+このクラスの説明は次のファイルから生成されました\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_dictionary_8h}{Dictionary.\-h}\item 
+\hyperlink{_dictionary_8cpp}{Dictionary.\-cpp}\end{DoxyCompactItemize}

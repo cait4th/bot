@@ -1,0 +1,115 @@
+\hypertarget{class_word}{\section{クラス Word}
+\label{class_word}\index{Word@{Word}}
+}
+
+
+語を表すクラス  
+
+
+
+
+{\ttfamily \#include $<$Word.\-h$>$}
+
+\subsection*{Public メソッド}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_word_a9dd554bf5175a175c083cbda6eba20be}{Word} (string \&\-\_\-str)
+\begin{DoxyCompactList}\small\item\em 辞書に登録されていない場合 \end{DoxyCompactList}\item 
+\hyperlink{class_word_aa88a96c8973a3d7b99cd6afeb8ce4475}{Word} (hash\-\_\-map$<$ string, string $>$ \&\-\_\-state)
+\begin{DoxyCompactList}\small\item\em 辞書から登録した場合 \end{DoxyCompactList}\item 
+virtual \hyperlink{class_word_a1fbcaae6859604d92e94cab540cb3523}{$\sim$\-Word} ()
+\item 
+string \hyperlink{class_word_ab7887831bc0823ce7af3a1139ab0d3b2}{get\-State} (const string \&\-\_\-index)
+\begin{DoxyCompactList}\small\item\em 登録語のパラメータを返す \end{DoxyCompactList}\item 
+void \hyperlink{class_word_a0aaa41af2a89d03547f8b3cd08933cc8}{Inc\-Exist} ()
+\item 
+void \hyperlink{class_word_a6a470d7a709085c6ba2e0d752555d12f}{set\-Next\-Word} (const string \-\_\-key, const int \-\_\-value)
+\item 
+int \hyperlink{class_word_ab9fc7597dcb1da37f9169f70b2466884}{get\-Exist} ()
+\item 
+hash\-\_\-map$<$ string, int $>$ \hyperlink{class_word_a84f032647fe603885e0abf145cbbc8f9}{get\-Next\-Word} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{説明}
+語を表すクラス 
+
+\subsection{コンストラクタとデストラクタ}
+\hypertarget{class_word_a9dd554bf5175a175c083cbda6eba20be}{\index{Word@{Word}!Word@{Word}}
+\index{Word@{Word}!Word@{Word}}
+\subsubsection[{Word}]{\setlength{\rightskip}{0pt plus 5cm}Word\-::\-Word (
+\begin{DoxyParamCaption}
+\item[{string \&}]{\-\_\-str}
+\end{DoxyParamCaption}
+)}}\label{class_word_a9dd554bf5175a175c083cbda6eba20be}
+
+
+辞書に登録されていない場合 
+
+\hypertarget{class_word_aa88a96c8973a3d7b99cd6afeb8ce4475}{\index{Word@{Word}!Word@{Word}}
+\index{Word@{Word}!Word@{Word}}
+\subsubsection[{Word}]{\setlength{\rightskip}{0pt plus 5cm}Word\-::\-Word (
+\begin{DoxyParamCaption}
+\item[{hash\-\_\-map$<$ string, string $>$ \&}]{\-\_\-state}
+\end{DoxyParamCaption}
+)}}\label{class_word_aa88a96c8973a3d7b99cd6afeb8ce4475}
+
+
+辞書から登録した場合 
+
+\hypertarget{class_word_a1fbcaae6859604d92e94cab540cb3523}{\index{Word@{Word}!$\sim$\-Word@{$\sim$\-Word}}
+\index{$\sim$\-Word@{$\sim$\-Word}!Word@{Word}}
+\subsubsection[{$\sim$\-Word}]{\setlength{\rightskip}{0pt plus 5cm}Word\-::$\sim$\-Word (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_word_a1fbcaae6859604d92e94cab540cb3523}
+
+
+\subsection{関数}
+\hypertarget{class_word_ab9fc7597dcb1da37f9169f70b2466884}{\index{Word@{Word}!get\-Exist@{get\-Exist}}
+\index{get\-Exist@{get\-Exist}!Word@{Word}}
+\subsubsection[{get\-Exist}]{\setlength{\rightskip}{0pt plus 5cm}int Word\-::get\-Exist (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_word_ab9fc7597dcb1da37f9169f70b2466884}
+\hypertarget{class_word_a84f032647fe603885e0abf145cbbc8f9}{\index{Word@{Word}!get\-Next\-Word@{get\-Next\-Word}}
+\index{get\-Next\-Word@{get\-Next\-Word}!Word@{Word}}
+\subsubsection[{get\-Next\-Word}]{\setlength{\rightskip}{0pt plus 5cm}hash\-\_\-map$<$string,int$>$ Word\-::get\-Next\-Word (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_word_a84f032647fe603885e0abf145cbbc8f9}
+\hypertarget{class_word_ab7887831bc0823ce7af3a1139ab0d3b2}{\index{Word@{Word}!get\-State@{get\-State}}
+\index{get\-State@{get\-State}!Word@{Word}}
+\subsubsection[{get\-State}]{\setlength{\rightskip}{0pt plus 5cm}string Word\-::get\-State (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{\-\_\-index}
+\end{DoxyParamCaption}
+)}}\label{class_word_ab7887831bc0823ce7af3a1139ab0d3b2}
+
+
+登録語のパラメータを返す 
+
+\hypertarget{class_word_a0aaa41af2a89d03547f8b3cd08933cc8}{\index{Word@{Word}!Inc\-Exist@{Inc\-Exist}}
+\index{Inc\-Exist@{Inc\-Exist}!Word@{Word}}
+\subsubsection[{Inc\-Exist}]{\setlength{\rightskip}{0pt plus 5cm}void Word\-::\-Inc\-Exist (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_word_a0aaa41af2a89d03547f8b3cd08933cc8}
+\hypertarget{class_word_a6a470d7a709085c6ba2e0d752555d12f}{\index{Word@{Word}!set\-Next\-Word@{set\-Next\-Word}}
+\index{set\-Next\-Word@{set\-Next\-Word}!Word@{Word}}
+\subsubsection[{set\-Next\-Word}]{\setlength{\rightskip}{0pt plus 5cm}void Word\-::set\-Next\-Word (
+\begin{DoxyParamCaption}
+\item[{const string}]{\-\_\-key, }
+\item[{const int}]{\-\_\-value}
+\end{DoxyParamCaption}
+)}}\label{class_word_a6a470d7a709085c6ba2e0d752555d12f}
+
+
+このクラスの説明は次のファイルから生成されました\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_word_8h}{Word.\-h}\item 
+\hyperlink{_word_8cpp}{Word.\-cpp}\end{DoxyCompactItemize}

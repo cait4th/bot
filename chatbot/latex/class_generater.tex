@@ -1,0 +1,149 @@
+\hypertarget{class_generater}{\section{クラス Generater}
+\label{class_generater}\index{Generater@{Generater}}
+}
+
+
+{\ttfamily \#include $<$Generater.\-h$>$}
+
+\subsection*{Public メソッド}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_generater_ae49a61b5d0ea6cfe547f79bb5f074a2d}{Generater} ()
+\item 
+virtual \hyperlink{class_generater_ac457e81b728164f877d83f43c91015a9}{$\sim$\-Generater} ()
+\item 
+bool \hyperlink{class_generater_a5e5b60f2b99bb3c3a3ecdbf1f89bf5bd}{Is\-Kanji} (const char ch)
+\begin{DoxyCompactList}\small\item\em 漢字かそれ以外かの判別 \end{DoxyCompactList}\item 
+bool \hyperlink{class_generater_a6f9bf9dd332499606ed18a32a9685738}{Is\-Katakana} (const char ch1, const char ch2)
+\begin{DoxyCompactList}\small\item\em カタカナかそれ以外かの判別 \end{DoxyCompactList}\item 
+bool \hyperlink{class_generater_a0d033a9c1042e11089283ae46fcb6dbd}{Is\-Punct} (const char ch1, const char ch2)
+\begin{DoxyCompactList}\small\item\em 句読点,記号の検出 \end{DoxyCompactList}\item 
+int \hyperlink{class_generater_af3b5d4bd16fe1046a925c0d561324156}{Type\-Set} (const char ch1, const char ch2)
+\begin{DoxyCompactList}\small\item\em 字種の設定 \end{DoxyCompactList}\item 
+string \hyperlink{class_generater_a67589e43b9db3162ff6e316c679b910c}{Get\-Wide\-Char} (const string \&\-\_\-s)
+\begin{DoxyCompactList}\small\item\em 全角文字のみ取り出す \end{DoxyCompactList}\item 
+vector$<$ string $>$ \hyperlink{class_generater_a7d092ae47af097c2100c677af13be14b}{Cut} (const string \&\-\_\-str, \hyperlink{class_dictionary}{Dictionary} \&\-\_\-dictionary)
+\begin{DoxyCompactList}\small\item\em 文章のカット \end{DoxyCompactList}\item 
+vector$<$ string $>$ \hyperlink{class_generater_a99184661083308dcd7bb70d396429d9f}{Create\-Morph\-Once} (const char $\ast$\-\_\-target)
+\begin{DoxyCompactList}\small\item\em 一度だけ後ろから形態素の切り出し \end{DoxyCompactList}\item 
+vector$<$ string $>$ \hyperlink{class_generater_af9fe33e53a69f1549fadd33bdbb2b8f4}{Create\-By\-Dictionary} (const string \&\-\_\-str, \hyperlink{class_dictionary}{Dictionary} \&\-\_\-dictionary)
+\begin{DoxyCompactList}\small\item\em 辞書による切り出し \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{コンストラクタとデストラクタ}
+\hypertarget{class_generater_ae49a61b5d0ea6cfe547f79bb5f074a2d}{\index{Generater@{Generater}!Generater@{Generater}}
+\index{Generater@{Generater}!Generater@{Generater}}
+\subsubsection[{Generater}]{\setlength{\rightskip}{0pt plus 5cm}Generater\-::\-Generater (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_generater_ae49a61b5d0ea6cfe547f79bb5f074a2d}
+\hypertarget{class_generater_ac457e81b728164f877d83f43c91015a9}{\index{Generater@{Generater}!$\sim$\-Generater@{$\sim$\-Generater}}
+\index{$\sim$\-Generater@{$\sim$\-Generater}!Generater@{Generater}}
+\subsubsection[{$\sim$\-Generater}]{\setlength{\rightskip}{0pt plus 5cm}Generater\-::$\sim$\-Generater (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_generater_ac457e81b728164f877d83f43c91015a9}
+
+
+\subsection{関数}
+\hypertarget{class_generater_af9fe33e53a69f1549fadd33bdbb2b8f4}{\index{Generater@{Generater}!Create\-By\-Dictionary@{Create\-By\-Dictionary}}
+\index{Create\-By\-Dictionary@{Create\-By\-Dictionary}!Generater@{Generater}}
+\subsubsection[{Create\-By\-Dictionary}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ string $>$ Generater\-::\-Create\-By\-Dictionary (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{\-\_\-str, }
+\item[{{\bf Dictionary} \&}]{\-\_\-dictionary}
+\end{DoxyParamCaption}
+)}}\label{class_generater_af9fe33e53a69f1549fadd33bdbb2b8f4}
+
+
+辞書による切り出し 
+
+最長一致法による \hypertarget{class_generater_a99184661083308dcd7bb70d396429d9f}{\index{Generater@{Generater}!Create\-Morph\-Once@{Create\-Morph\-Once}}
+\index{Create\-Morph\-Once@{Create\-Morph\-Once}!Generater@{Generater}}
+\subsubsection[{Create\-Morph\-Once}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ string $>$ Generater\-::\-Create\-Morph\-Once (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{\-\_\-target}
+\end{DoxyParamCaption}
+)}}\label{class_generater_a99184661083308dcd7bb70d396429d9f}
+
+
+一度だけ後ろから形態素の切り出し 
+
+\hypertarget{class_generater_a7d092ae47af097c2100c677af13be14b}{\index{Generater@{Generater}!Cut@{Cut}}
+\index{Cut@{Cut}!Generater@{Generater}}
+\subsubsection[{Cut}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ string $>$ Generater\-::\-Cut (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{\-\_\-str, }
+\item[{{\bf Dictionary} \&}]{\-\_\-dictionary}
+\end{DoxyParamCaption}
+)}}\label{class_generater_a7d092ae47af097c2100c677af13be14b}
+
+
+文章のカット 
+
+\hypertarget{class_generater_a67589e43b9db3162ff6e316c679b910c}{\index{Generater@{Generater}!Get\-Wide\-Char@{Get\-Wide\-Char}}
+\index{Get\-Wide\-Char@{Get\-Wide\-Char}!Generater@{Generater}}
+\subsubsection[{Get\-Wide\-Char}]{\setlength{\rightskip}{0pt plus 5cm}string Generater\-::\-Get\-Wide\-Char (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{\-\_\-s}
+\end{DoxyParamCaption}
+)}}\label{class_generater_a67589e43b9db3162ff6e316c679b910c}
+
+
+全角文字のみ取り出す 
+
+\-\_\-sから全角文字のみ取り出したものを返す \hypertarget{class_generater_a5e5b60f2b99bb3c3a3ecdbf1f89bf5bd}{\index{Generater@{Generater}!Is\-Kanji@{Is\-Kanji}}
+\index{Is\-Kanji@{Is\-Kanji}!Generater@{Generater}}
+\subsubsection[{Is\-Kanji}]{\setlength{\rightskip}{0pt plus 5cm}bool Generater\-::\-Is\-Kanji (
+\begin{DoxyParamCaption}
+\item[{const char}]{ch}
+\end{DoxyParamCaption}
+)}}\label{class_generater_a5e5b60f2b99bb3c3a3ecdbf1f89bf5bd}
+
+
+漢字かそれ以外かの判別 
+
+\hypertarget{class_generater_a6f9bf9dd332499606ed18a32a9685738}{\index{Generater@{Generater}!Is\-Katakana@{Is\-Katakana}}
+\index{Is\-Katakana@{Is\-Katakana}!Generater@{Generater}}
+\subsubsection[{Is\-Katakana}]{\setlength{\rightskip}{0pt plus 5cm}bool Generater\-::\-Is\-Katakana (
+\begin{DoxyParamCaption}
+\item[{const char}]{ch1, }
+\item[{const char}]{ch2}
+\end{DoxyParamCaption}
+)}}\label{class_generater_a6f9bf9dd332499606ed18a32a9685738}
+
+
+カタカナかそれ以外かの判別 
+
+\hypertarget{class_generater_a0d033a9c1042e11089283ae46fcb6dbd}{\index{Generater@{Generater}!Is\-Punct@{Is\-Punct}}
+\index{Is\-Punct@{Is\-Punct}!Generater@{Generater}}
+\subsubsection[{Is\-Punct}]{\setlength{\rightskip}{0pt plus 5cm}bool Generater\-::\-Is\-Punct (
+\begin{DoxyParamCaption}
+\item[{const char}]{ch1, }
+\item[{const char}]{ch2}
+\end{DoxyParamCaption}
+)}}\label{class_generater_a0d033a9c1042e11089283ae46fcb6dbd}
+
+
+句読点,記号の検出 
+
+一応一文字分を引数としている \hypertarget{class_generater_af3b5d4bd16fe1046a925c0d561324156}{\index{Generater@{Generater}!Type\-Set@{Type\-Set}}
+\index{Type\-Set@{Type\-Set}!Generater@{Generater}}
+\subsubsection[{Type\-Set}]{\setlength{\rightskip}{0pt plus 5cm}int Generater\-::\-Type\-Set (
+\begin{DoxyParamCaption}
+\item[{const char}]{ch1, }
+\item[{const char}]{ch2}
+\end{DoxyParamCaption}
+)}}\label{class_generater_af3b5d4bd16fe1046a925c0d561324156}
+
+
+字種の設定 
+
+
+
+このクラスの説明は次のファイルから生成されました\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_generater_8h}{Generater.\-h}\item 
+\hyperlink{_generater_8cpp}{Generater.\-cpp}\end{DoxyCompactItemize}
